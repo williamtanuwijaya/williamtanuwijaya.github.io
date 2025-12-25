@@ -8,7 +8,7 @@ export default defineConfig({
   // PENTING: Ganti base sesuai nama repo.
   // Jika repo Anda bernama "williamtanuwijaya.github.io", isi '/'
   // Jika repo Anda bernama "portfolio", isi '/portfolio/'
-  base: '/portfolio-william/',
+  base: '/williamtanuwijaya.github.io/',
   build: {
     outDir: 'docs', // <-- INI KUNCINYA (Ubah output ke folder docs)
   },

@@ -4,76 +4,54 @@ import { Github, Linkedin, FileText, Mail, Code, Layout, Database, Terminal } fr
 const App = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-  // DATA PRIBADI
+  // PERSONAL DATA (Source: CV_William Tanuwijaya (1).pdf)
   const personalInfo = {
-    name: 'William Tanuwijaya, S.Kom., CWDev.',
-    role: 'Full Stack Web Developer',
+    name: 'William Tanuwijaya, S.Kom.',
+    role: 'Software Engineer | Full-Stack Web Developer',
     about:
-      'Seorang pengembang web berdedikasi dengan latar belakang akademis yang kuat dan pengalaman praktis dalam membangun aplikasi web modern. Saya memiliki passion untuk mengubah kode yang kompleks menjadi antarmuka pengguna yang indah dan fungsional. Fokus saya adalah pada performa, skalabilitas, dan pengalaman pengguna (UX).',
+      'I am an Informatics graduate from Universitas Multi Data Palembang (2026) specializing in Full-Stack Web Development and Machine Learning. I have a proven track record of building secure, scalable web applications and a research background in Computer Vision for medical imaging.',
     email: 'will.tw0807@gmail.com',
     linkedin: 'https://www.linkedin.com/in/william-tanuwijaya/',
     github: 'https://github.com/williamtanuwijaya',
-    cvLink: '/CV-William-Tanuwijaya.pdf', // Pastikan file ini ada di folder public
-    foto: '/assets/foto_formal-fotor-bg-remover.png', // Pastikan path file gambar benar
+    cvLink: '/CV_William_Tanuwijaya.pdf', 
+    foto: '/assets/foto_formal-fotor-bg-remover.png', 
   };
 
+  // TECHNICAL SKILLS (Source: CV_William Tanuwijaya.pdf)
   const skills = [
-    { name: 'React JS & Node JS', level: 'Advanced', icon: <Code size={20} /> },
-    { name: 'Laravel & PHP', level: 'Expert', icon: <Database size={20} /> },
-    { name: 'MySQL & Database', level: 'Advanced', icon: <Database size={20} /> },
-    { name: 'Tailwind CSS', level: 'Expert', icon: <Layout size={20} /> },
-    { name: 'Docker', level: 'Intermediate', icon: <Layout size={20} /> },
-    { name: 'Git & GitHub', level: 'Advanced', icon: <Terminal size={20} /> },
+    { name: 'React.js & Next.js', level: 'Advanced', icon: <Code size={20} /> },
+    { name: 'Go & Laravel', level: 'Expert', icon: <Terminal size={20} /> },
+    { name: 'PHP & Express.js', level: 'Advanced', icon: <Code size={20} /> },
+    { name: 'MySQL & PostgreSQL', level: 'Expert', icon: <Database size={20} /> },
+    { name: 'Tailwind & Bootstrap', level: 'Expert', icon: <Layout size={20} /> },
+    { name: 'Docker & Git', level: 'Advanced', icon: <Terminal size={20} /> },
   ];
 
+  // EXPERIENCE JOURNEY (Source: CV_William Tanuwijaya (1).pdf)
   const experiences = [
     {
-      year: 'Sep 2025 - Saat ini',
-      role: 'Assistant Lecturer SOLID Paradigm',
+      year: 'Aug 2023 - Present',
+      role: 'Web Developer (Remote | Freelance)',
+      company: 'CV. Namu Kreativa',
+      desc: 'Developed a gift-set web application using Laravel 12 and MySQL. Engineered backend functionalities for article management and Role-Based Access Control (RBAC).',
+    },
+    {
+      year: 'Sep 2025 - Jan 2026',
+      role: 'Lecturer Assistant (SOLID Paradigm)',
       company: 'Universitas Multi Data Palembang',
-      desc: 'Menjadi asisten dosen untuk mata kuliah SOLID Paradigm, membimbing mahasiswa dalam pemahaman prinsip desain perangkat lunak.',
+      desc: 'Taught SOLID principles, Object-Oriented Programming (OOP) concepts, and Clean Code practices to ensure software maintainability and scalability.',
     },
     {
-      year: 'Jul 2025 - Saat ini',
-      role: 'Chairman Of Machine Learning',
-      company: 'UKM Programming UMDP',
-      desc: 'Memimpin divisi Machine Learning, menyusun kurikulum pembelajaran, dan mengelola kegiatan anggota.',
-    },
-    {
-      year: 'Agu 2023 - Saat ini',
-      role: 'Web Developer (Remote)',
-      company: 'Namu Kreativa',
-      desc: 'Mengembangkan solusi web full-stack. Tech Stack: Laravel, HTML, CSS, PHP, MySQL.',
-    },
-    {
-      year: 'Feb 2025 - Jun 2025',
-      role: 'Web Developer Intern',
+      year: 'Feb 2025 - Jun 2026',
+      role: 'Web Developer (Internship)',
       company: 'PT Sinar Mandiri Cemerlang Electric',
-      desc: 'Magang pengembangan aplikasi web. Tech Stack: Express.js, MySQL, React.js, Node.js.',
+      desc: 'Built "StokBar," a web-based inventory management system using React.js and Express.js. Successfully registered the application as Intellectual Property (HKI).',
     },
     {
-      year: 'Jul 2024 - Jun 2025',
-      role: 'Vice Chairman',
-      company: 'Himpunan Mahasiswa Informatika (HIMIF)',
-      desc: 'Wakil ketua himpunan, mengkoordinasikan program kerja dan bersinergi dengan divisi internal.',
-    },
-    {
-      year: 'Mei 2024 - Jun 2025',
-      role: 'Vice Chairman Of Web Development',
-      company: 'UKM Programming UMDP',
-      desc: 'Mengelola divisi pengembangan web dan memfasilitasi workshop teknis untuk anggota.',
-    },
-    {
-      year: 'Jul 2023 - Jul 2024',
-      role: 'Staff Technology and Education',
-      company: 'Himpunan Mahasiswa Informatika (HIMIF)',
-      desc: 'Bertanggung jawab dalam divisi teknologi dan edukasi untuk pengembangan skill mahasiswa.',
-    },
-    {
-      year: 'Mei 2023 - Okt 2023',
-      role: 'Video Editor',
-      company: 'Lucy English Centre',
-      desc: 'Mengedit konten video edukasi dan promosi. Tools: Adobe Premiere Pro, After Effects, Photoshop.',
+      year: '2022 - 2026',
+      role: 'Undergraduate Researcher',
+      company: 'Universitas Multi Data Palembang',
+      desc: 'Conducted thesis research on "Residual-Gated Attention U-Net for Polyp Segmentation," published in a SINTA 3 indexed journal.',
     },
   ];
 
@@ -88,21 +66,11 @@ const App = () => {
             </div>
             <div className="hidden md:block">
               <div className="ml-10 flex items-baseline space-x-8">
-                <a href="#home" className="hover:text-teal-400 transition-colors px-3 py-2 rounded-md text-sm font-medium">
-                  Home
-                </a>
-                <a href="#about" className="hover:text-teal-400 transition-colors px-3 py-2 rounded-md text-sm font-medium">
-                  About
-                </a>
-                <a href="#skills" className="hover:text-teal-400 transition-colors px-3 py-2 rounded-md text-sm font-medium">
-                  Skills
-                </a>
-                <a href="#experience" className="hover:text-teal-400 transition-colors px-3 py-2 rounded-md text-sm font-medium">
-                  Experience
-                </a>
-                <a href="#contact" className="hover:text-teal-400 transition-colors px-3 py-2 rounded-md text-sm font-medium">
-                  Contact
-                </a>
+                <a href="#home" className="hover:text-teal-400 transition-colors px-3 py-2 rounded-md text-sm font-medium">Home</a>
+                <a href="#about" className="hover:text-teal-400 transition-colors px-3 py-2 rounded-md text-sm font-medium">About</a>
+                <a href="#skills" className="hover:text-teal-400 transition-colors px-3 py-2 rounded-md text-sm font-medium">Skills</a>
+                <a href="#experience" className="hover:text-teal-400 transition-colors px-3 py-2 rounded-md text-sm font-medium">Experience</a>
+                <a href="#contact" className="hover:text-teal-400 transition-colors px-3 py-2 rounded-md text-sm font-medium">Contact</a>
               </div>
             </div>
           </div>
@@ -118,18 +86,15 @@ const App = () => {
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-teal-400 to-blue-500">William Tanuwijaya</span>
           </h1>
           <p className="text-xl text-slate-400 font-light">
-            {personalInfo.role} | {personalInfo.name}
+            {personalInfo.role}
           </p>
-          <p className="text-slate-400 max-w-lg mx-auto md:mx-0 leading-relaxed">Membangun pengalaman digital yang imersif dan fungsional dengan teknologi web modern.</p>
+          <p className="text-slate-400 max-w-lg mx-auto md:mx-0 leading-relaxed">Building immersive and functional digital experiences with modern web technologies.</p>
 
           <div className="flex flex-wrap gap-4 justify-center md:justify-start pt-4">
-            {/* DOWNLOAD CV BUTTON */}
             <a href={personalInfo.cvLink} download className="group bg-teal-500 hover:bg-teal-600 text-white px-6 py-3 rounded-lg font-medium transition-all flex items-center gap-2 shadow-lg shadow-teal-500/20">
               <FileText size={20} />
               Download CV
             </a>
-
-            {/* SOCIAL BUTTONS */}
             <div className="flex gap-3">
               <a href={personalInfo.linkedin} target="_blank" rel="noopener noreferrer" className="p-3 bg-slate-800 hover:bg-slate-700 text-white rounded-lg transition-all border border-slate-700 hover:border-teal-500/50">
                 <Linkedin size={20} />
@@ -141,27 +106,16 @@ const App = () => {
           </div>
         </div>
 
-        {/* Abstract Visual / Image Section */}
         <div className="md:w-1/2 mt-12 md:mt-0 flex justify-center relative">
-          {/* Background Glow Effects */}
           <div className="absolute top-0 -left-4 w-72 h-72 bg-teal-500 rounded-full mix-blend-multiply filter blur-[96px] opacity-20 animate-blob"></div>
           <div className="absolute top-0 -right-4 w-72 h-72 bg-blue-500 rounded-full mix-blend-multiply filter blur-[96px] opacity-20 animate-blob animation-delay-2000"></div>
-
-          {/* Main Photo Card */}
           <div className="relative group">
-            {/* Animated Borders */}
             <div className="absolute -inset-1 bg-gradient-to-r from-teal-500 to-blue-600 rounded-2xl blur opacity-25 group-hover:opacity-75 transition duration-1000 group-hover:duration-200"></div>
-
             <div className="relative w-64 h-80 md:w-72 md:h-96 bg-slate-900 ring-1 ring-slate-900/5 rounded-2xl leading-none flex items-end justify-center overflow-hidden shadow-2xl">
-              {/* Background gradient di belakang orang */}
               <div className="absolute inset-0 bg-gradient-to-b from-slate-800/50 via-slate-900/20 to-slate-900"></div>
-
-              {/* Foto Anda */}
               <img src={personalInfo.foto} alt="William Tanuwijaya" className="relative z-10 w-full h-full object-cover object-top transform transition-transform duration-500 group-hover:scale-105" />
-
-              {/* Overlay Nama (Opsional - Muncul saat hover) */}
               <div className="absolute bottom-0 w-full p-4 bg-gradient-to-t from-slate-900 to-transparent z-20 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                <p className="text-teal-400 font-bold text-center">William Tanuwijaya, S.Kom., CWDev.</p>
+                <p className="text-teal-400 font-bold text-center">{personalInfo.name}</p>
               </div>
             </div>
           </div>
@@ -218,14 +172,10 @@ const App = () => {
           <div className="space-y-8">
             {experiences.map((exp, index) => (
               <div key={index} className="relative pl-8 md:pl-0">
-                {/* Timeline Line */}
                 <div className="hidden md:block absolute left-1/2 transform -translate-x-1/2 h-full w-0.5 bg-slate-800"></div>
-
                 <div className={`md:flex items-center justify-between w-full ${index % 2 === 0 ? 'flex-row-reverse' : ''}`}>
                   <div className="hidden md:block w-5/12"></div>
-
                   <div className="absolute left-0 md:left-1/2 transform md:-translate-x-1/2 w-4 h-4 bg-teal-500 rounded-full border-4 border-slate-900 z-10 mt-1.5 md:mt-0"></div>
-
                   <div className="md:w-5/12 bg-slate-800 p-6 rounded-xl border border-slate-700 hover:border-teal-500/50 transition-all shadow-lg hover:shadow-teal-900/20">
                     <span className="text-teal-400 text-sm font-mono mb-2 block">{exp.year}</span>
                     <h3 className="text-xl font-bold text-white mb-1">{exp.role}</h3>

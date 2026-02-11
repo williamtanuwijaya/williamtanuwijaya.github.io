@@ -13,7 +13,7 @@ const App = () => {
     email: 'will.tw0807@gmail.com',
     linkedin: 'https://www.linkedin.com/in/william-tanuwijaya/',
     github: 'https://github.com/williamtanuwijaya',
-    cvLink: '/CV_William_Tanuwijaya.pdf', 
+    cvLink: '/CV_William-Tanuwijaya.pdf', 
     foto: '/assets/foto_formal-fotor-bg-remover.png', 
   };
 

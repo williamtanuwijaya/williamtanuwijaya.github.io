@@ -6,52 +6,52 @@ const App = () => {
 
   // PERSONAL DATA (Source: CV_William Tanuwijaya (1).pdf)
   const personalInfo = {
-    name: 'William Tanuwijaya, S.Kom.',
-    role: 'Software Engineer | Full-Stack Web Developer',
+    name: 'William Tanuwijaya', // Berdasarkan 
+    role: 'Full-Stack Developer | Software Engineer', // Berdasarkan 
     about:
-      'I am an Informatics graduate from Universitas Multi Data Palembang (2026) specializing in Full-Stack Web Development and Machine Learning. I have a proven track record of building secure, scalable web applications and a research background in Computer Vision for medical imaging.',
-    email: 'will.tw0807@gmail.com',
-    linkedin: 'https://www.linkedin.com/in/william-tanuwijaya/',
-    github: 'https://github.com/williamtanuwijaya',
-    cvLink: '/CV_William-Tanuwijaya.pdf', 
+      'Full-Stack Developer with hands-on experience building scalable web applications using JavaScript (React.js, Next.js, Node.js), PHP (Laravel), and Go (Gin). Strong foundation in RESTful API development, relational databases (MySQL, PostgreSQL), Docker-based deployment, and clean, maintainable code and designing robust architectures aligned with SOLID principles and OOP best practices.', // Berdasarkan 
+    email: 'will.tw0807@gmail.com', // Berdasarkan 
+    linkedin: 'https://linkedin.com/in/william-tanuwijaya', // Berdasarkan 
+    github: 'https://williamtanuwijaya.github.io', // Berdasarkan 
+    cvLink: '/CV_William-Tanuwijaya_new.pdf', 
     foto: '/assets/foto_formal-fotor-bg-remover.png', 
   };
 
   // TECHNICAL SKILLS (Source: CV_William Tanuwijaya.pdf)
   const skills = [
     { name: 'React.js & Next.js', level: 'Advanced', icon: <Code size={20} /> },
-    { name: 'Go & Laravel', level: 'Expert', icon: <Terminal size={20} /> },
-    { name: 'PHP & Express.js', level: 'Advanced', icon: <Code size={20} /> },
+    { name: 'Go (Gin) & Laravel', level: 'Expert', icon: <Terminal size={20} /> },
+    { name: 'Node.js & PHP', level: 'Advanced', icon: <Code size={20} /> },
     { name: 'MySQL & PostgreSQL', level: 'Expert', icon: <Database size={20} /> },
     { name: 'Tailwind & Bootstrap', level: 'Expert', icon: <Layout size={20} /> },
-    { name: 'Docker & Git', level: 'Advanced', icon: <Terminal size={20} /> },
+    { name: 'SOLID & OOP', level: 'Advanced', icon: <Terminal size={20} /> },
   ];
 
   // EXPERIENCE JOURNEY (Source: CV_William Tanuwijaya (1).pdf)
-  const experiences = [
+ const experiences = [
     {
-      year: 'Aug 2023 - Present',
-      role: 'Web Developer (Remote | Freelance)',
-      company: 'CV. Namu Kreativa',
-      desc: 'Developed a gift-set web application using Laravel 12 and MySQL. Engineered backend functionalities for article management and Role-Based Access Control (RBAC).',
+      year: 'Aug 2023 - Present', // Berdasarkan 
+      role: 'Web Developer (Remote | Freelance)', // Berdasarkan 
+      company: 'CV. Namu Kreativa', // Berdasarkan 
+      desc: 'Developed a gift-set web application using Laravel 12 and MySQL. Engineered backend functionalities for article management and user access control (RBAC).', // Berdasarkan 
     },
     {
-      year: 'Sep 2025 - Jan 2026',
-      role: 'Lecturer Assistant (SOLID Paradigm)',
-      company: 'Universitas Multi Data Palembang',
-      desc: 'Taught SOLID principles, Object-Oriented Programming (OOP) concepts, and Clean Code practices to ensure software maintainability and scalability.',
+      year: 'Sep 2025 - Jan 2026', // Berdasarkan 
+      role: 'Lecturer Assistant (SOLID Paradigm)', // Berdasarkan 
+      company: 'Universitas Multi Data Palembang', // Berdasarkan 
+      desc: 'Mentored students in software engineering principles, focusing on SOLID, OOP, and clean architecture while guiding practical implementation of design patterns.', // Berdasarkan 
     },
     {
-      year: 'Feb 2025 - Jun 2026',
-      role: 'Web Developer (Internship)',
-      company: 'PT Sinar Mandiri Cemerlang Electric',
-      desc: 'Built "StokBar," a web-based inventory management system using React.js and Express.js. Successfully registered the application as Intellectual Property (HKI).',
+      year: 'Feb 2025 - Jun 2026', // Berdasarkan 
+      role: 'Web Developer (Internship)', // Berdasarkan 
+      company: 'PT Sinar Mandiri Cemerlang Electric', // Berdasarkan 
+      desc: 'Built "StokBar," a web-based inventory management system using React.js and Express.js. Engineered the system for real-time tracking and registered it as Intellectual Property (HKI).', // Berdasarkan 
     },
     {
-      year: '2022 - 2026',
-      role: 'Undergraduate Researcher',
-      company: 'Universitas Multi Data Palembang',
-      desc: 'Conducted thesis research on "Residual-Gated Attention U-Net for Polyp Segmentation," published in a SINTA 3 indexed journal.',
+      year: '2022 - 2026', // Berdasarkan 
+      role: 'Bachelor of Computer Science', // Berdasarkan 
+      company: 'Universitas Multi Data Palembang', // Berdasarkan 
+      desc: 'Conducted thesis research on "Residual-Gated Attention U-Net for Polyp Segmentation," published in a SINTA 3 indexed journal.', // Berdasarkan 
     },
   ];
 
@@ -134,11 +134,11 @@ const App = () => {
               <p className="text-slate-400 leading-loose mb-6">{personalInfo.about}</p>
               <div className="grid grid-cols-2 gap-4">
                 <div className="p-4 bg-slate-800 rounded-lg border border-slate-700">
-                  <h3 className="text-2xl font-bold text-teal-400">3+</h3>
+                  <h3 className="text-2xl font-bold text-teal-400">2+</h3>
                   <p className="text-sm text-slate-400">Years Experience</p>
                 </div>
                 <div className="p-4 bg-slate-800 rounded-lg border border-slate-700">
-                  <h3 className="text-2xl font-bold text-blue-400">10+</h3>
+                  <h3 className="text-2xl font-bold text-blue-400">3+</h3>
                   <p className="text-sm text-slate-400">Projects Completed</p>
                 </div>
               </div>

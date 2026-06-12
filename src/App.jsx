@@ -30,7 +30,13 @@ const App = () => {
   // EXPERIENCE JOURNEY (Source: CV_William Tanuwijaya (1).pdf)
  const experiences = [
     {
-      year: 'Aug 2023 - Present', // Berdasarkan 
+      year: 'April 2026 - present', // Berdasarkan 
+      role: 'IT Developer', // Berdasarkan 
+      company: 'PT. Gogomedia Visindo', // Berdasarkan 
+      desc: 'Developed Odoo modules for inventory management and sales processing.', // Berdasarkan 
+    },
+    {
+      year: 'Aug 2023 - April 2026', // Berdasarkan 
       role: 'Web Developer (Remote | Freelance)', // Berdasarkan 
       company: 'CV. Namu Kreativa', // Berdasarkan 
       desc: 'Developed a gift-set web application using Laravel 12 and MySQL. Engineered backend functionalities for article management and user access control (RBAC).', // Berdasarkan 

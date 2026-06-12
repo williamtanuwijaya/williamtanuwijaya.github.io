@@ -31,7 +31,7 @@ const App = () => {
  const experiences = [
     {
       year: 'April 2026 - present', // Berdasarkan 
-      role: 'IT Developer', // Berdasarkan 
+      role: 'IT Developer (Full-Time)', // Berdasarkan 
       company: 'PT. Gogomedia Visindo', // Berdasarkan 
       desc: 'Developed Odoo modules for inventory management and sales processing.', // Berdasarkan 
     },

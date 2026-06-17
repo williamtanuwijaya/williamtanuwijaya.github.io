@@ -36,6 +36,12 @@ const App = () => {
       desc: 'Developed Odoo modules for inventory management and sales processing.', // Berdasarkan 
     },
     {
+      year: 'January 2026 - June 2026', // Berdasarkan 
+      role: 'Full Stack Developer (Volunteer)', // Berdasarkan 
+      company: 'Universitas Multi Data Palembang', // Berdasarkan 
+      desc: 'Re-engineered existing web applications to improve performance and user experience.', // Berdasarkan 
+    },
+    {
       year: 'Aug 2023 - April 2026', // Berdasarkan 
       role: 'Web Developer (Remote | Freelance)', // Berdasarkan 
       company: 'CV. Namu Kreativa', // Berdasarkan 

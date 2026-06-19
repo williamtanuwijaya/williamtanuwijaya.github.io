@@ -12,7 +12,7 @@ const App = () => {
       'Full-Stack Developer with hands-on experience building scalable web applications using JavaScript (React.js, Next.js, Node.js), PHP (Laravel), and Go (Gin). Strong foundation in RESTful API development, relational databases (MySQL, PostgreSQL), Docker-based deployment, and clean, maintainable code and designing robust architectures aligned with SOLID principles and OOP best practices.', // Berdasarkan 
     email: 'will.tw0807@gmail.com', // Berdasarkan 
     linkedin: 'https://linkedin.com/in/william-tanuwijaya', // Berdasarkan 
-    github: 'https://williamtanuwijaya.github.io', // Berdasarkan 
+    github: 'https://github.com/williamtanuwijaya', // Berdasarkan 
     cvLink: '/CV_William-Tanuwijaya.pdf', 
     foto: '/assets/foto_formal-fotor-bg-remover.png', 
   };

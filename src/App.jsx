@@ -36,6 +36,12 @@ const App = () => {
       desc: 'Developed Odoo modules for inventory management and sales processing.', // Berdasarkan 
     },
     {
+      year: 'June 2026 - present', // Berdasarkan 
+      role: 'Lead Software Engineer (Remote | Freelance)', // Berdasarkan 
+      company: 'Kalirama', // Berdasarkan 
+      desc: 'make company profile', // Berdasarkan 
+    },
+    {
       year: 'January 2026 - June 2026', // Berdasarkan 
       role: 'Full Stack Developer (Volunteer)', // Berdasarkan 
       company: 'Universitas Multi Data Palembang', // Berdasarkan 

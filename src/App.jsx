@@ -20,6 +20,7 @@ const App = () => {
   // TECHNICAL SKILLS (Source: CV_William Tanuwijaya.pdf)
   const skills = [
     { name: 'React.js & Next.js', level: 'Advanced', icon: <Code size={20} /> },
+    { name: 'Python', level: 'Advanced', icon: <Code size={20} /> },
     { name: 'Go (Gin) & Laravel', level: 'Expert', icon: <Terminal size={20} /> },
     { name: 'Node.js & PHP', level: 'Advanced', icon: <Code size={20} /> },
     { name: 'MySQL & PostgreSQL', level: 'Expert', icon: <Database size={20} /> },
